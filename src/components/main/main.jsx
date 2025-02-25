@@ -218,7 +218,7 @@ const Main = () => {
             <div className={"greet " + (suggestion ? "" : "greet-show")}>
               <p>
                 <span>
-                  {suggestion ? "Ask any questions!" : "Hello, " + currentName}
+                  {suggestion ? "Ask any questions!" : "Helloo, " + currentName}
                 </span>
               </p>
             </div>
@@ -354,7 +354,7 @@ const Main = () => {
               </div>
             </div>
             <input
-            className="input-input"
+              className="input-input"
               onChange={(e) => setInput(e.target.value)}
               value={input}
               onKeyDown={(event)=>{if (event.key === "Enter")onSent()}}
