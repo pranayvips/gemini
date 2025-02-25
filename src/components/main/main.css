@@ -154,10 +154,11 @@
     max-width: 900px;
     margin: auto;
     height: calc(100% - 250px);
+    /* height: 100%; */
 }
 
 .main .greet{
-    margin: 50px 0;
+    /* margin: 50px 0; */
     font-size: 35px;
     color: #c4c7c5;
     font-weight: 500;
@@ -237,7 +238,7 @@
 .main-bottom{
     position: absolute;
     /* bottom: 50px; */
-    bottom: calc(50px + env(safe-area-inset-bottom));
+    bottom: calc(20px + env(safe-area-inset-bottom));
     width: 100%;
     max-width: 900px;
     padding: 0 20px;
@@ -601,6 +602,15 @@
         min-height: 100dvw;
         max-height: 100dvh;
     }
+    .main .main-container{
+        height: 100%;
+    }
+
+    .main-bottom:has(input:focus) {
+        bottom: 50dvh;
+    }
+    /* .search-box input:focus{
+    } */
 }
 
 @media (max-width: 900px) {
