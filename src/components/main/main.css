@@ -605,12 +605,6 @@
     .main .main-container{
         height: 100%;
     }
-
-    .main-bottom:has(input:focus) {
-        bottom: 50dvh;
-    }
-    /* .search-box input:focus{
-    } */
 }
 
 @media (max-width: 900px) {
