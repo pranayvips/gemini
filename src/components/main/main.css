@@ -236,7 +236,8 @@
 
 .main-bottom{
     position: absolute;
-    bottom: 50px;
+    /* bottom: 50px; */
+    bottom: calc(50px + env(safe-area-inset-bottom));
     width: 100%;
     max-width: 900px;
     padding: 0 20px;

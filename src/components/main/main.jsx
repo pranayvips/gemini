@@ -21,7 +21,7 @@ const Main = () => {
   const [suggestion, setSuggestion] = useState(false);
 
   function signOut() {
-    localStorage.removeItem("login");
+    localStorage.clear();
     setcurrentName("");
     document.querySelector(".login").style.display = "flex";
     document.querySelector(".sidebar").style.display = "none";
@@ -218,7 +218,7 @@ const Main = () => {
             <div className={"greet " + (suggestion ? "" : "greet-show")}>
               <p>
                 <span>
-                  {suggestion ? "Ask any questions!" : "Helloo, " + currentName}
+                  {suggestion ? "Ask any questions!" : "Hello, " + currentName}
                 </span>
               </p>
             </div>
