@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  color: var(--text-color);
+  transition: color .3s;
+}
+:root{
+  /* light mode */
+  --sidebar-bg: #f0f4f9;
+  --popup-bg: #d7dde5;
+  --newChat-bg: #e6eaf1;
+  /* --newChat-text: grey; */
+  --text-color: #000;
+  --recent-entry-bg: #282828;
+  --recent-entry-bg-hover: #e2e6eb;
+  --bg-color: #fff;
+  /* dark mode */
+  
+}
+
+
+body{
+  transition: all .5s;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.dark-theme{
+  --bg-color: #1B1C1D;
+  --sidebar-bg: #282A2C;
+
+  --popup-bg: #282A2C;
+  --newChat-bg: #202123;
+  /* --newChat-text: blue; */
+  --text-color: #fff;
+  --recent-entry-bg: #A2A9B0;
+  --recent-entry-bg-hover: #323537;
+  
+}
+
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.5s ease-in-out;
+  background-color: var(--bg-color);
+  transition: background-color .6s;
+}
+
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
